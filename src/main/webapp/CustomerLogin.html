@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Customer sign in | ECART</title>
+<link rel="stylesheet" href="assets/css/ecart.css">
+</head>
+<body>
+	<header class="site-header"><div class="page-shell flex min-h-[72px] items-center justify-between"><a class="brand-mark" href="index.html"><span class="brand-symbol" aria-hidden="true">E</span><span class="text-xl">ECART</span></a><a class="nav-link" href="index.html"><i class="bi bi-house-door mr-2" aria-hidden="true"></i>Back to home</a></div></header>
+	<main class="page-shell grid min-h-[calc(100vh-73px)] items-center py-12 md:grid-cols-[1fr_0.9fr] md:gap-16">
+		<section class="hidden md:block"><p class="mb-4 text-xs font-bold uppercase tracking-[0.18em] text-teal">Your ECART account</p><h1 class="page-title max-w-xl">Good to have you back.</h1><p class="mt-5 max-w-lg text-lg leading-8 text-muted">Sign in to browse the current product catalog and continue to the customer shopping experience.</p><div class="mt-10 h-1 w-24 bg-coral"></div></section>
+		<section class="mx-auto w-full max-w-md rounded-xl border border-line bg-white p-6 shadow-sm sm:p-9">
+			<p class="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-teal">Customer access</p><h2 class="font-display text-3xl font-normal">Sign in</h2><p class="mt-2 text-sm leading-6 text-muted">Use your ECART customer credentials.</p>
+			<div id="form-error" class="notice notice-error mt-5" role="alert" hidden><i class="bi bi-exclamation-circle mr-2" aria-hidden="true"></i>We could not sign you in. Check your details and try again.</div>
+			<form class="mt-7 space-y-5" action="cls" method="post" data-disable-on-submit>
+				<div><label class="field-label" for="cname"><i class="bi bi-person mr-1" aria-hidden="true"></i>Username</label><input class="field-input" id="cname" name="cname" type="text" autocomplete="username" placeholder="Your username" required></div>
+				<div><label class="field-label" for="cpwd"><i class="bi bi-lock mr-1" aria-hidden="true"></i>Password</label><div class="flex gap-2"><input class="field-input" id="cpwd" name="cpwd" type="password" autocomplete="current-password" placeholder="Your password" required><button class="button-secondary shrink-0 px-3" type="button" data-password-toggle="cpwd" aria-label="Show password"><i class="bi bi-eye" aria-hidden="true"></i><span class="sr-only">Show password</span></button></div></div>
+				<button class="button-primary w-full" type="submit"><i class="bi bi-box-arrow-in-right mr-2" aria-hidden="true"></i>Sign in <span class="ml-2" aria-hidden="true">&#8594;</span></button>
+			</form>
+			<p class="mt-6 text-sm text-muted">New to ECART? <a class="font-bold text-teal underline underline-offset-4" href="CustomerRegister.html">Create an account</a></p>
+		</section>
+	</main>
+	<script src="assets/js/navigation.js" defer></script><script>if(new URLSearchParams(location.search).has('error'))document.getElementById('form-error').hidden=false;</script>
+</body>
+</html>

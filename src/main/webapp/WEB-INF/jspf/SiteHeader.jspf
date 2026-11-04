@@ -1,0 +1,35 @@
+<%@ page import="com.NCart.Bean.AdminBean,com.NCart.Bean.CustomerBean" %>
+<%
+String appContext = request.getContextPath();
+String currentPage = request.getServletPath();
+AdminBean signedAdmin = (AdminBean) session.getAttribute("abean");
+CustomerBean signedCustomer = (CustomerBean) session.getAttribute("cbean");
+%>
+<header class="site-header">
+  <div class="page-shell flex min-h-[72px] items-center justify-between gap-5">
+    <a class="brand-mark" href="<%= appContext %>/index.html" aria-label="ECART home">
+      <span class="brand-symbol" aria-hidden="true">E</span><span class="text-xl">ECART</span>
+    </a>
+    <button class="grid h-11 w-11 place-items-center rounded-lg border border-line bg-white md:hidden" type="button" data-menu-toggle aria-controls="site-navigation" aria-expanded="false" aria-label="Open navigation">
+      <i class="bi bi-list text-xl" aria-hidden="true"></i>
+    </button>
+    <nav id="site-navigation" data-mobile-menu hidden class="fixed inset-x-0 top-[72px] z-40 hidden flex max-h-[calc(100vh-72px)] flex-col gap-1 overflow-y-auto border-b border-line bg-white p-5 shadow-lg md:static md:flex md:max-h-none md:flex-row md:items-center md:gap-7 md:overflow-visible md:border-0 md:bg-transparent md:p-0 md:shadow-none" aria-label="Main navigation">
+      <a class="nav-link" href="<%= appContext %>/index.html" <%=currentPage.endsWith("/index.html") ? "aria-current=\"page\"" : ""%>><i class="bi bi-house-door mr-2" aria-hidden="true"></i>Home</a>
+      <a class="nav-link" href="<%= appContext %>/About.html" <%=currentPage.endsWith("/About.html") ? "aria-current=\"page\"" : ""%>><i class="bi bi-info-circle mr-2" aria-hidden="true"></i>About Us</a>
+      <a class="nav-link" href="<%= appContext %>/Contact.html" <%=currentPage.endsWith("/Contact.html") ? "aria-current=\"page\"" : ""%>><i class="bi bi-envelope mr-2" aria-hidden="true"></i>Contact</a>
+      <% if (signedAdmin != null) { %>
+        <a class="nav-link" href="<%= appContext %>/AdminHome.jsp" <%=currentPage.endsWith("/AdminHome.jsp") ? "aria-current=\"page\"" : ""%>><i class="bi bi-speedometer2 mr-2" aria-hidden="true"></i>Admin dashboard</a>
+        <a class="nav-link" href="<%= appContext %>/view1" <%=currentPage.endsWith("/view1") || currentPage.endsWith("/ViewProduct.jsp") || currentPage.endsWith("/EditProduct.jsp") ? "aria-current=\"page\"" : ""%>><i class="bi bi-box-seam mr-2" aria-hidden="true"></i>Products</a>
+        <a class="button-secondary w-full md:w-auto" href="<%= appContext %>/logout"><i class="bi bi-box-arrow-right mr-2" aria-hidden="true"></i>Log out</a>
+      <% } else if (signedCustomer != null) { %>
+        <a class="nav-link" href="<%= appContext %>/CustomerHome.jsp" <%=currentPage.endsWith("/CustomerHome.jsp") ? "aria-current=\"page\"" : ""%>><i class="bi bi-person-circle mr-2" aria-hidden="true"></i>My account</a>
+        <a class="nav-link" href="<%= appContext %>/view" <%=currentPage.endsWith("/view") || currentPage.endsWith("/ViewCustomerProduct.jsp") || currentPage.endsWith("/BuyProduct.jsp") ? "aria-current=\"page\"" : ""%>><i class="bi bi-box-seam mr-2" aria-hidden="true"></i>Shop products</a>
+        <a class="button-secondary w-full md:w-auto" href="<%= appContext %>/logout"><i class="bi bi-box-arrow-right mr-2" aria-hidden="true"></i>Log out</a>
+      <% } else { %>
+        <a class="button-primary w-full md:w-auto" href="<%= appContext %>/CustomerLogin.html"><i class="bi bi-person mr-2" aria-hidden="true"></i>Customer login</a>
+        <a class="nav-link" href="<%= appContext %>/AdminLogin.html"><i class="bi bi-shield-lock mr-2" aria-hidden="true"></i>Admin login</a>
+      <% } %>
+    </nav>
+  </div>
+</header>
+<script src="<%= appContext %>/assets/js/navigation.js" defer></script>

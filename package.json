@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -c tailwind.config.js -i src/main/frontend/tailwind.css -o src/main/webapp/assets/css/ecart.css --minify",
+    "watch:css": "tailwindcss -c tailwind.config.js -i src/main/frontend/tailwind.css -o src/main/webapp/assets/css/ecart.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.17"
+  }
+}

@@ -1,0 +1,133 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+    font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    --ecart-ink: #18332f;
+    --ecart-muted: #64736f;
+    --ecart-line: #dce5df;
+    --ecart-teal: #087e72;
+    --ecart-coral: #ed7059;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply m-0 bg-canvas text-ink antialiased;
+  }
+
+  a {
+    @apply text-inherit;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-teal ring-offset-2 ring-offset-white;
+  }
+}
+
+@layer components {
+  .page-shell {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10;
+  }
+
+  .site-header {
+    @apply sticky top-0 z-40 border-b border-line bg-white/95 backdrop-blur transition-shadow duration-200;
+  }
+
+  .brand-mark {
+    @apply inline-flex items-center gap-2 font-bold tracking-normal text-ink no-underline;
+  }
+
+  .brand-symbol {
+    @apply grid h-9 w-9 place-items-center rounded-xl bg-teal text-sm font-bold text-white;
+  }
+
+  .nav-link {
+    @apply relative inline-flex min-h-11 items-center text-sm font-semibold text-muted transition-colors duration-200 hover:text-teal;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute inset-x-0 bottom-1 h-0.5 origin-left scale-x-0 bg-coral transition-transform duration-200;
+  }
+
+  .nav-link:hover::after,
+  .nav-link[aria-current='page']::after {
+    @apply scale-x-100;
+  }
+
+  .button-primary {
+    @apply inline-flex min-h-12 items-center justify-center rounded-lg bg-teal px-5 py-3 text-sm font-bold text-white shadow-sm transition duration-200 hover:-translate-y-0.5 hover:bg-teal-dark hover:shadow-lg active:translate-y-0 disabled:pointer-events-none disabled:opacity-50;
+  }
+
+  .button-secondary {
+    @apply inline-flex min-h-12 items-center justify-center rounded-lg border border-line bg-white px-5 py-3 text-sm font-bold text-ink transition duration-200 hover:-translate-y-0.5 hover:border-teal hover:text-teal;
+  }
+
+  .field-label {
+    @apply mb-2 block text-sm font-bold text-ink;
+  }
+
+  .field-input {
+    @apply block min-h-12 w-full rounded-lg border border-line bg-white px-3.5 py-3 text-base text-ink transition placeholder:text-muted/70 focus:border-teal focus:outline-none focus:ring-2 focus:ring-teal/20;
+  }
+
+  .surface-card {
+    @apply rounded-xl border border-line bg-white shadow-sm transition duration-200 hover:-translate-y-1 hover:border-teal/40 hover:shadow-lift;
+  }
+
+  .page-title {
+    @apply font-display text-4xl font-normal leading-tight text-ink sm:text-5xl;
+  }
+
+  .notice {
+    @apply rounded-lg border px-4 py-3 text-sm leading-6;
+  }
+
+  .notice-error {
+    @apply border-red-200 bg-red-50 text-red-800;
+  }
+
+  .notice-success {
+    @apply border-teal/20 bg-teal/5 text-teal-dark;
+  }
+
+  .data-table {
+    @apply w-full border-collapse text-left text-sm;
+  }
+
+  .data-table th {
+    @apply bg-canvas px-4 py-3 font-bold text-muted;
+  }
+
+  .data-table td {
+    @apply border-t border-line px-4 py-4 align-middle;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,11 @@
+<footer class="mt-20 border-t border-line bg-white">
+  <div class="page-shell flex flex-col gap-5 py-8 text-sm text-muted sm:flex-row sm:items-center sm:justify-between">
+    <a class="brand-mark" href="<%= request.getContextPath() %>/index.html"><span class="brand-symbol" aria-hidden="true">E</span><span>ECART</span></a>
+    <p class="m-0">An electronic store application.</p>
+    <div class="flex flex-wrap gap-x-6 gap-y-2">
+      <a class="transition hover:text-teal" href="<%= request.getContextPath() %>/About.html"><i class="bi bi-info-circle mr-1" aria-hidden="true"></i>About Us</a>
+      <a class="transition hover:text-teal" href="<%= request.getContextPath() %>/Contact.html"><i class="bi bi-envelope mr-1" aria-hidden="true"></i>Contact</a>
+      <a class="transition hover:text-teal" href="<%= request.getContextPath() %>/CustomerLogin.html"><i class="bi bi-person mr-1" aria-hidden="true"></i>Customer login</a>
+    </div>
+  </div>
+</footer>

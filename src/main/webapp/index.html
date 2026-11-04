@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f5f7f2">
+<title>ECART | Electronics, made easy</title>
+<link rel="stylesheet" href="assets/css/ecart.css">
+</head>
+<body>
+	<header class="site-header"><div class="page-shell flex min-h-[72px] items-center justify-between gap-5">
+		<a class="brand-mark" href="index.html" aria-label="ECART home"><span class="brand-symbol" aria-hidden="true">E</span><span class="text-xl">ECART</span></a>
+		<button class="grid h-11 w-11 place-items-center rounded-lg border border-line bg-white md:hidden" type="button" data-menu-toggle aria-controls="site-navigation" aria-expanded="false" aria-label="Open navigation"><i class="bi bi-list text-xl" aria-hidden="true"></i></button>
+		<nav id="site-navigation" data-mobile-menu hidden class="fixed inset-x-0 top-[72px] z-40 hidden flex max-h-[calc(100vh-72px)] flex-col gap-1 overflow-y-auto border-b border-line bg-white p-5 shadow-lg md:static md:flex md:max-h-none md:flex-row md:items-center md:gap-7 md:overflow-visible md:border-0 md:bg-transparent md:p-0 md:shadow-none" aria-label="Main navigation">
+			<a class="nav-link" href="index.html" aria-current="page"><i class="bi bi-house-door mr-2" aria-hidden="true"></i>Home</a><a class="nav-link" href="About.html"><i class="bi bi-info-circle mr-2" aria-hidden="true"></i>About Us</a><a class="nav-link" href="Contact.html"><i class="bi bi-envelope mr-2" aria-hidden="true"></i>Contact</a><a class="button-primary w-full md:w-auto" href="CustomerLogin.html"><i class="bi bi-person mr-2" aria-hidden="true"></i>Customer login</a><a class="nav-link" href="AdminLogin.html"><i class="bi bi-shield-lock mr-2" aria-hidden="true"></i>Admin login</a>
+		</nav>
+	</div></header>
+	<main>
+		<section class="page-shell grid min-h-[620px] items-center gap-12 py-16 md:grid-cols-[1.05fr_0.95fr] md:py-24">
+			<div class="animate-fade-up">
+				<p class="mb-5 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-teal"><span class="h-2 w-2 rounded-full bg-coral"></span> The ECART electronic store</p>
+				<h1 class="max-w-2xl font-display text-5xl font-normal leading-[1.08] text-ink sm:text-6xl">Good technology. A more considered way to shop.</h1>
+				<p class="mt-6 max-w-xl text-lg leading-8 text-muted">Explore the available catalog, manage your account, and find the essentials through a straightforward electronics shopping experience.</p>
+				<div class="mt-9 flex flex-wrap gap-3"><a class="button-primary" href="CustomerLogin.html"><i class="bi bi-cart mr-2" aria-hidden="true"></i>Start shopping <span class="ml-2" aria-hidden="true">&#8594;</span></a><a class="button-secondary" href="CustomerRegister.html"><i class="bi bi-person-plus mr-2" aria-hidden="true"></i>Create an account</a></div>
+				<p class="mt-6 text-sm text-muted">Already manage the store? <a class="font-bold text-teal underline underline-offset-4" href="AdminLogin.html"><i class="bi bi-shield-lock mr-1" aria-hidden="true"></i>Administrator sign in</a></p>
+			</div>
+			<div class="relative mx-auto w-full max-w-lg animate-fade-up" aria-label="ECART store experience illustration">
+				<div class="absolute -right-2 top-5 h-24 w-24 rounded-full border border-coral/40 sm:-right-5 sm:h-32 sm:w-32"></div>
+				<div class="relative overflow-hidden rounded-[2rem] border border-line bg-white p-5 shadow-lift sm:p-8">
+					<div class="flex items-center justify-between border-b border-line pb-5"><span class="brand-mark"><span class="brand-symbol" aria-hidden="true">E</span><span>ECART</span></span><span class="rounded-full bg-citrus/40 px-3 py-1 text-xs font-bold text-ink">ELECTRONICS</span></div>
+					<div class="relative mt-7 grid min-h-[260px] place-items-center overflow-hidden rounded-2xl bg-canvas p-6 sm:min-h-[320px]">
+						<div class="absolute inset-0 opacity-60" style="background-image:linear-gradient(90deg,rgba(8,126,114,.08) 1px,transparent 1px),linear-gradient(rgba(8,126,114,.08) 1px,transparent 1px);background-size:28px 28px" aria-hidden="true"></div>
+						<div class="relative grid h-40 w-40 place-items-center rounded-[2.5rem] border border-teal/20 bg-white shadow-lg sm:h-48 sm:w-48"><div class="grid h-24 w-24 place-items-center rounded-3xl bg-teal text-5xl font-display text-white sm:h-28 sm:w-28">E</div></div>
+						<div class="absolute bottom-4 left-4 rounded-lg border border-line bg-white px-3 py-2 text-xs font-bold text-ink shadow-sm">Your product catalog</div><div class="absolute right-4 top-4 rounded-lg border border-line bg-white px-3 py-2 text-xs font-bold text-ink shadow-sm">Customer first</div>
+					</div>
+					<div class="mt-5 flex items-center justify-between gap-4"><div><p class="m-0 text-sm font-bold text-ink">A clear path from browse to buy</p><p class="m-0 mt-1 text-xs text-muted">Products and availability from the store catalog</p></div><span class="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-citrus text-xl text-ink" aria-hidden="true">&#8599;</span></div>
+				</div>
+			</div>
+		</section>
+		<section class="border-y border-line bg-white py-14 sm:py-16"><div class="page-shell grid gap-8 md:grid-cols-3 md:gap-10">
+			<div><p class="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-coral">Browse</p><h2 class="font-display text-2xl font-normal">A real catalog</h2><p class="mt-3 leading-7 text-muted">See product details and availability maintained by the store.</p></div>
+			<div><p class="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-coral">Shop</p><h2 class="font-display text-2xl font-normal">Your own account</h2><p class="mt-3 leading-7 text-muted">Register or sign in to access the customer shopping flow.</p></div>
+			<div><p class="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-coral">Manage</p><h2 class="font-display text-2xl font-normal">Store tools</h2><p class="mt-3 leading-7 text-muted">Authorized administrators can maintain the product catalog.</p></div>
+		</div></section>
+		<section class="page-shell flex flex-col items-start justify-between gap-6 py-14 sm:flex-row sm:items-center sm:py-16"><div><p class="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-teal">Ready when you are</p><h2 class="font-display text-3xl font-normal">Find your way into ECART.</h2></div><div class="flex flex-wrap gap-3"><a class="button-primary" href="CustomerLogin.html">Customer login</a><a class="button-secondary" href="About.html">About ECART</a></div></section>
+	</main>
+	<footer class="border-t border-line bg-white"><div class="page-shell flex flex-col gap-4 py-8 text-sm text-muted sm:flex-row sm:items-center sm:justify-between"><span class="font-bold text-ink">ECART</span><span>An electronic store application.</span><div class="flex flex-wrap gap-5"><a href="About.html"><i class="bi bi-info-circle mr-1" aria-hidden="true"></i>About Us</a><a href="Contact.html"><i class="bi bi-envelope mr-1" aria-hidden="true"></i>Contact</a><a href="CustomerLogin.html"><i class="bi bi-person mr-1" aria-hidden="true"></i>Customer login</a></div></div></footer>
+	<script src="assets/js/navigation.js" defer></script>
+</body>
+</html>
