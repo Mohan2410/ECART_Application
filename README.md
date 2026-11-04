@@ -203,6 +203,8 @@ ECART_Application/
 The homepage provides a clean and user-friendly interface with navigation options for Home, About Us, Contact, Customer Login, and Admin Login.
 
 ![ECART Homepage](screenshots/homepage.png)
+<img width="1917" height="1028" alt="image" src="https://github.com/user-attachments/assets/b381820b-4e16-478f-aaa3-901f0a39ecfe" />
+
 
 ### 2. Admin Login
 
