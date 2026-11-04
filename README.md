@@ -202,7 +202,7 @@ ECART_Application/
 
 The homepage provides a clean and user-friendly interface with navigation options for Home, About Us, Contact, Customer Login, and Admin Login.
 
-![ECART Homepage](screenshots/homepage.png)
+ECART Homepage
 <img width="1917" height="1028" alt="image" src="https://github.com/user-attachments/assets/b381820b-4e16-478f-aaa3-901f0a39ecfe" />
 
 
@@ -210,37 +210,49 @@ The homepage provides a clean and user-friendly interface with navigation option
 
 The admin login page provides access to authorized store administrators.
 
-![ECART Admin Login](screenshots/admin-login.png)
+ECART Admin Login
+<img width="1917" height="1028" alt="image" src="https://github.com/user-attachments/assets/37cd42d2-0075-488e-a6e3-676774585c23" />
+
 
 ### 3. Admin Dashboard
 
 The admin dashboard provides options to add new products and manage the existing product catalogue.
 
-![ECART Admin Dashboard](screenshots/admin-dashboard.png)
+ECART Admin Dashboard
+<img width="1917" height="1025" alt="image" src="https://github.com/user-attachments/assets/ec2ec885-61b8-4c5d-b997-71e4d1a0a99d" />
+
 
 ### 4. Product Management – Add Product
 
 Administrators can add electronic products by entering product code, product name, company, price, and quantity.
 
-![ECART Add Product](screenshots/add-product.png)
+ECART Add Product
+<img width="1917" height="1031" alt="image" src="https://github.com/user-attachments/assets/e98dbd33-9ea3-4931-a3a9-7069f31158b1" />
+
 
 ### 5. Customer Registration
 
 New customers can create an account by entering their username, password, personal details, address, email, and mobile number.
 
-![ECART Customer Registration](screenshots/customer-registration.png)
+ECART Customer Registration
+<img width="1917" height="1032" alt="image" src="https://github.com/user-attachments/assets/efbe7c43-6de7-4071-99e9-e61b9f7856e2" />
+
 
 ### 6. Customer Dashboard
 
 After successful authentication, customers can access their dashboard and navigate to the available shopping options.
 
-![ECART Customer Dashboard](screenshots/customer-dashboard.png)
+ECART Customer Dashboard
+<img width="1917" height="1027" alt="image" src="https://github.com/user-attachments/assets/2dfb4d86-23c4-4522-aab7-af14702e176e" />
+
 
 ### 7. Customer Product Catalogue
 
 Customers can explore the available electronic products, check prices and stock availability, and proceed with purchasing products.
 
-![ECART Product Catalogue](screenshots/product-catalogue.png)
+ECART Product Catalogue
+<img width="1917" height="1032" alt="image" src="https://github.com/user-attachments/assets/f4ba56d9-fc32-4a24-8923-9a44b450b657" />
+
 
 ---
 
